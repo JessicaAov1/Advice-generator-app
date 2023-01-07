@@ -58,8 +58,9 @@ article {
   letter-spacing: var(--spacing);
   color: var(--clr-primary);
   letter-spacing: 0.08rem;
-  margin-bottom: 2rem;
   position: relative;
+  bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .divider {
   position: relative;
@@ -110,7 +111,6 @@ a {
   .advice-main {
     width: 90%;
     height: 70vw;
-
     margin: 0 auto;
   }
   .section-title {
@@ -134,46 +134,91 @@ a {
     font-size: 0.875rem;
   }
   footer {
-    top: 50em;
+    top: 150em;
     font-size: 0.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .advice-main {
-    width: 60%;
+    width: 50%;
     height: 45vw;
-    padding: 3rem 1rem 0 1rem;
-    top: 50px;
-    right: 5px;
+    padding: 3rem 2rem 0 3rem;
+    top: 100px;
     margin: 0 auto;
   }
   .advice {
-    bottom: 2.5rem;
+    bottom: 1rem;
   }
 
   .section-title {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
   }
   .advice {
     font-size: 28px;
   }
   .divider {
-    max-width: 0%;
-    top: 230px;
-    left: 1.2rem;
+    width: 80%;
     height: 2rem;
+    right: 2rem;
+  }
+  img.pattern {
+    width: 40vw;
   }
 
   btn {
     font-size: 0.5rem;
     width: 20%;
-    height: 5rem;
+    height: 4.5rem;
   }
   img.dice {
     width: 35%;
+    top: 0.25rem;
   }
   footer {
-    top: 20rem;
-    font-size: 0.875rem;
+    top: 150vw;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .advice-main {
+    max-width: 40%;
+    height: 25vw;
+    padding: 3rem 2rem 0 3rem;
+    top: 120px;
+    margin: 0 auto;
+  }
+  .advice {
+    bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .advice {
+    font-size: 28px;
+  }
+  .divider {
+    width: 60%;
+    height: 2rem;
+    left: -1px;
+    bottom: 1rem;
+  }
+  img.pattern {
+    width: 20vw;
+  }
+
+  btn {
+    font-size: 0.5rem;
+    width: 12%;
+    height: 4rem;
+  }
+  img.dice {
+    width: 40%;
+    top: 0.2em;
+  }
+  footer {
+    top: 150vw;
+    font-size: 1rem;
   }
 }
