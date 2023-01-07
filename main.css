@@ -134,7 +134,7 @@ a {
     font-size: 0.875rem;
   }
   footer {
-    margin-top: 50rem;
+    top: 50em;
     font-size: 0.5rem;
   }
 }
