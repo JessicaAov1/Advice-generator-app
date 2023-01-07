@@ -42,7 +42,7 @@ article {
 
 .section-title {
   padding: 20px;
-  font-size: 2rem;
+  font-size: 0.875rem;
   color: var(--clr-primary-Neon-green);
   text-align: center;
   font-weight: 500;
@@ -98,6 +98,7 @@ img.dice {
 
 footer {
   position: relative;
+  bottom: -150px;
   background-color: var(--clr-Dark-Blue);
   color: var(--clr-primary-Neon-green);
   font-size: 0.825rem;
@@ -114,7 +115,7 @@ a {
     margin: 0 auto;
   }
   .section-title {
-    font-size: 0.675rem;
+    font-size: 0.875rem;
   }
   .advice {
     font-size: 1.2rem;
@@ -134,7 +135,7 @@ a {
     font-size: 0.875rem;
   }
   footer {
-    top: 150em;
+    bottom: -150;
     font-size: 0.5rem;
   }
 }
@@ -215,10 +216,10 @@ a {
   }
   img.dice {
     width: 40%;
-    top: 0.2em;
+    top: 0.5em;
   }
   footer {
-    top: 150vw;
+    bottom: -150px;
     font-size: 1rem;
   }
 }
