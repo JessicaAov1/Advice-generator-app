@@ -19,11 +19,11 @@ body {
 }
 
 .container {
+  width: 100vw;
+  height: 100vw;
   background: var(--clr-Dark-Blue);
   margin: 0 auto;
-  padding: 50px;
-  width: 100vw;
-  height: 140vw;
+  padding: 20px;
 }
 
 .advice-main {
@@ -94,6 +94,7 @@ btn {
 img.dice {
   width: 35%;
   position: relative;
+  bottom: 0.5rem;
 }
 
 .icon:hover {
@@ -103,7 +104,7 @@ img.dice {
 
 footer {
   position: relative;
-  top: 120px;
+
   color: var(--clr-primary-Neon-green);
   font-size: 0.825rem;
   text-align: center;
@@ -112,22 +113,14 @@ footer {
 @media screen and (min-width: 375px) {
   .container {
     width: 100vw;
+    height: 130vw;
   }
   .advice-main {
-    width: 100%;
+    width: 80%;
     height: 200px;
     top: 20px;
-    right: 5px;
     height: 70vw;
     margin: 0 auto;
-  }
-  .advice {
-    bottom: 2.5rem;
-    font-size: 14px;
-  }
-
-  article {
-    width: 80%;
   }
   .section-title {
     font-size: 0.675rem;
@@ -138,7 +131,7 @@ footer {
   .divider {
     width: 50%;
     top: 175px;
-    left: 2.5rem;
+    left: 2.4rem;
     height: 2rem;
   }
   img.pattern {
@@ -146,9 +139,9 @@ footer {
     left: 20px;
   }
 
-  .btn {
+  btn {
     width: 2.5rem;
-    height: 2rem;
+    height: 2.5rem;
     font-size: 0.875rem;
   }
   footer {
@@ -173,11 +166,7 @@ footer {
   .advice {
     bottom: 2.5rem;
   }
-  article {
-    width: 60%;
-    height: 80vw;
-    margin: 0 auto;
-  }
+
   .section-title {
     font-size: 0.875rem;
   }
@@ -193,7 +182,7 @@ footer {
 
   btn {
     font-size: 0.5rem;
-    width: 21%;
+    width: 20%;
     height: 5rem;
   }
   img.dice {
