@@ -37,7 +37,7 @@ body {
 
 .cell-advice {
   max-width: 25rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin: 0 auto;
   padding: 1rem 3rem 3rem 3rem;
@@ -64,16 +64,18 @@ img.pattern {
   margin: 0 auto;
 }
 btn {
-  margin: 0.8rem auto;
-  font-size: 1.6rem;
-  width: 10vw;
+  width: 8vw;
+  height: 6vh;
+  margin: 2.5rem auto;
   border-radius: 50%;
   background: var(--clr-primary-Neon-green);
   transition: var(--transition);
   color: var(--clr-primary-Neon-green);
 }
 img.dice {
-  width: 3.8vw;
+  margin-top: 0.5rem;
+  width: 3.5vw;
+  height: 3vh;
 }
 
 .icon:hover {
