@@ -19,76 +19,61 @@ body {
   background: var(--clr-Dark-Blue);
 }
 
-.advice-main {
-  width: 80vw;
-  height: 100vw;
-  padding: 2rem 1rem 0 1rem;
+.app-container {
   background: var(--clr-Dark-Grayish-Blue);
   border-radius: var(--radius);
-  position: relative;
-  top: 70px;
-  bottom: 20px;
-  text-align: center;
-  display: block;
-  margin: 1rem auto;
 }
 
-article {
-  position: relative;
-  bottom: 1.8rem;
-  padding: 2rem 0.5rem;
-  margin: 0 auto;
-}
-
-.section-title {
-  padding: 20px;
-  font-size: 0.875rem;
+.cell-title {
+  padding: 3rem 0 1rem 0;
+  font-size: 0.7rem;
   color: var(--clr-primary-Neon-green);
   text-align: center;
   font-weight: 500;
+  margin: 0 auto;
   letter-spacing: var(--spacing);
   text-transform: uppercase;
-  position: relative;
-  bottom: 15px;
 }
 
-.advice {
-  max-width: 35rem;
+.cell-advice {
+  max-width: 25rem;
+  font-size: 1rem;
   font-weight: 800;
+  margin: 0 auto;
+  padding: 1rem 3rem 3rem 3rem;
+  text-align: center;
   letter-spacing: var(--spacing);
   color: var(--clr-primary);
   letter-spacing: 0.08rem;
-  position: relative;
-  bottom: 1.5rem;
-  margin-bottom: 1rem;
-}
-.divider {
-  position: relative;
-  margin: 1.5rem auto;
-}
-img.pattern {
-  width: 60vw;
 }
 
-btn {
-  font-size: 1rem;
-  display: inline-block;
+.cell-divider {
+  max-width: 60vw;
   margin: 0 auto;
-  padding: 20px 0px 2px;
-  width: 3.5rem;
-  height: 3.5rem;
+  text-align: center;
+}
+img.pattern {
+  max-width: 60vw;
+  align-items: center;
+}
+.cell-button {
+  display: grid;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  margin: 0 auto;
+}
+btn {
+  margin: 0.8rem auto;
+  font-size: 1.6rem;
+  width: 10vw;
   border-radius: 50%;
   background: var(--clr-primary-Neon-green);
   transition: var(--transition);
   color: var(--clr-primary-Neon-green);
-  position: absolute;
-  bottom: 0;
-  transform: translate(-50%, 50%);
 }
 img.dice {
-  width: 35%;
-  position: relative;
-
+  width: 3.8vw;
 }
 
 .icon:hover {
@@ -108,119 +93,55 @@ a {
   color: var(--clr-primary);
 }
 
-@media screen and (min-width: 375px) {
-  .advice-main {
-    width: 90%;
-    height: 60vw;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-  }
-  .section-title {
-    font-size: 0.875rem;
-  }
-  .advice {
-    font-size: 1.2rem;
-  }
-  .divider {
-    width: 100%;
-    height: 2rem;
-  }
-  img.pattern {
-    width: 60vw;
-    left: 20px;
-  }
-
-  btn {
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 0.875rem;
-  }
-  footer {
-    bottom: -160;
-    font-size: 0.375rem;
-  }
-}
 @media screen and (min-width: 768px) {
-  .advice-main {
-    width: 50%;
-    height: 45vw;
-    padding: 3rem 2rem 0 3rem;
-    top: 100px;
-    margin: 0 auto;
+  .app-container {
+    width: 50vw;
+    height: 90vh;
   }
-  .advice {
-    bottom: 1rem;
+  .cell-title {
+    max-width: 30rem;
   }
-
-  .section-title {
-    font-size: 1.2rem;
+  .cell-advice {
+    font-size: 22px;
+    max-width: 30rem;
+    padding: 0 3.5rem;
   }
-  .advice {
-    font-size: 28px;
+  .cell-divider {
+    margin: 0px auto;
   }
-  .divider {
-    width: 80%;
-    height: 2rem;
-    right: 2rem;
-  }
-  img.pattern {
-    width: 40vw;
-  }
-
   btn {
-    font-size: 0.5rem;
-    width: 20%;
-    height: 4.5rem;
+    margin: 0.3rem auto;
+    font-size: 2rem;
+    width: 6vw;
   }
   img.dice {
-    width: 35%;
-    top: 0.25rem;
-  }
-  footer {
-    top: 150vw;
-    font-size: 1rem;
+    width: 2vw;
+    height: 3;
   }
 }
-@media screen and (min-width: 900px) {
-  .advice-main {
-    max-width: 40%;
-    height: 25vw;
-    padding: 3rem 2rem 0 3rem;
-    top: 120px;
-    margin: 0 auto;
+@media screen and (min-width: 1400px) {
+  .app-container {
+    width: 30vw;
+    height: 80vh;
   }
-  .advice {
-    bottom: 2rem;
+  .cell-title {
+    max-width: 30rem;
   }
-
-  .section-title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+  .cell-advice {
+    font-size: 22px;
+    max-width: 30rem;
+    padding: 0 3rem 1.5rem 3rem;
   }
-  .advice {
-    font-size: 28px;
+  .cell-divider {
+    margin: 0px auto;
   }
-  .divider {
-    width: 60%;
-    height: 2rem;
-    left: -1px;
-    bottom: 1rem;
-  }
-  img.pattern {
-    width: 20vw;
-  }
-
   btn {
-    font-size: 0.5rem;
-    width: 12%;
-    height: 4rem;
+    margin: 0.8rem auto;
+    font-size: 2rem;
+    width: 3vw;
   }
   img.dice {
-    width: 40%;
-    top: 0.5em;
-  }
-  footer {
-    bottom: -150px;
-    font-size: 1rem;
+    width: 1.2vw;
+    height: 4.5vh;
   }
 }
