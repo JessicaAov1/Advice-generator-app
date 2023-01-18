@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
- <style></style>
+ <style>
+  .app-container{
+    width:80vw;
+    height:90vh;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    margin: 2rem auto;
+   justify-content: center;
+   align-items: center;
+    
+   }
+  
+ </style>
     <link
       rel="icon"
       type="image/png"
@@ -27,28 +40,32 @@
   </head>
   <body>
    
+
      
+    <div class="app-container">
       <!--section title-->
-      <article class="advice-main">
-     <!--advice ID-->
-        <div class="section-title">Advice #<span class="adviceId" id="adviceId"></span> </div>
+        <div class="cell-title">Advice #<span class="adviceId" id="adviceId"></span> </div>
         <!--end of section title-->
         <!--advice-->
         
-        <div class="advice" id="advice">"True happiness always resides in the quest."</div>
+        <div class="cell-advice" id="advice">"True happiness always resides in the quest."</div>
   
         <!--end of advice-->
-        <div class="divider">
+        <!--divider-->
+        <div class="cell-divider">
           <img src="images/pattern-divider-mobile.svg" class ="pattern"alt="pattern divider" />
         </div>
+         <!--end of divider-->
     
-      <!--icon-->
-
+      <!--button-->
+<div class="cell-button">
       <btn class="icon" id="button">
         <img src="./images/icon-dice.svg" alt="dice" class="dice"/>
       </btn>
-      <!-- end of icon-->
-       </article>
+        </div>
+      <!-- end of button-->
+   
+     </div>
      
       
     <footer>
@@ -59,8 +76,8 @@
         >. Coded by <a href="https://github.com/JessicaAov1/Advice-generator-app"target="_blank">Jessica</a>.
       </div>
     </footer>
+   
     
     <script src="index.js"></script>
   </body>
 </html>
-
