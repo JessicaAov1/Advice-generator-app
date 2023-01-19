@@ -65,7 +65,7 @@ img.pattern {
 }
 btn {
   width: 8vw;
-  height: 6vh;
+  height: 5.5vh;
   margin: 2.5rem auto;
   border-radius: 50%;
   background: var(--clr-primary-Neon-green);
