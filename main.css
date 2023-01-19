@@ -65,7 +65,7 @@ img.pattern {
 }
 btn {
   width: 8vw;
-  height: 5vh;
+  height: 6vh;
   margin: 2.5rem auto;
   border-radius: 50%;
   background: var(--clr-primary-Neon-green);
@@ -73,7 +73,7 @@ btn {
   color: var(--clr-primary-Neon-green);
 }
 img.dice {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   width: 3.5vw;
   height: 3vh;
 }
@@ -97,8 +97,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .app-container {
-    width: 50vw;
-    height: 90vh;
+    width: 30vw;
+    height: 60vh;
   }
   .cell-title {
     max-width: 30rem;
@@ -112,13 +112,14 @@ a {
     margin: 0px auto;
   }
   btn {
-    margin: 0.3rem auto;
+    margin: 2.8rem auto;
     font-size: 2rem;
-    width: 6vw;
+    width: 3vw;
   }
   img.dice {
-    width: 2vw;
-    height: 3;
+    width: 1.5vw;
+    height: 2;
+    margin-bottom: 0.3rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -137,13 +138,16 @@ a {
   .cell-divider {
     margin: 0px auto;
   }
+  .cell-button {
+    width: 1vw;
+  }
   btn {
     margin: 0.8rem auto;
-    font-size: 2rem;
-    width: 3vw;
+    font-size: 0.5rem;
+    width: 2vw;
   }
   img.dice {
-    width: 1.2vw;
+    width: 30%;
     height: 4.5vh;
   }
 }
