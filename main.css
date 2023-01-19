@@ -61,11 +61,11 @@ img.pattern {
   width: 100vw;
   height: 10vh;
   text-align: center;
-  margin: 0 auto;
+  margin: 0.5rem auto;
 }
 btn {
   width: 8vw;
-  height: 5.5vh;
+  height: 5vh;
   margin: 2.5rem auto;
   border-radius: 50%;
   background: var(--clr-primary-Neon-green);
