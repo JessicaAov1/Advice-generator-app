@@ -19,9 +19,10 @@ body {
   background: var(--clr-Dark-Blue);
 }
 
-.app-container {
+.card-advice {
   background: var(--clr-Dark-Grayish-Blue);
   border-radius: var(--radius);
+  align-items: center;
 }
 
 .cell-title {
@@ -58,15 +59,16 @@ img.pattern {
 }
 .cell-button {
   display: grid;
-  width: 100vw;
-  height: 10vh;
+  min-width: 1.7vw;
+  max-width: 7vw;
+  height: 4vh;
   text-align: center;
   margin: 0 auto;
+  position: relative;
+  top: 1rem;
 }
+
 btn {
-  width: 8vw;
-  height: 6vh;
-  margin: 2.5rem auto;
   border-radius: 50%;
   background: var(--clr-primary-Neon-green);
   transition: var(--transition);
@@ -74,8 +76,8 @@ btn {
 }
 img.dice {
   margin-top: 0.6rem;
-  width: 3.5vw;
-  height: 3vh;
+  width: 3.8vw;
+  height: 1.8vh;
 }
 
 .icon:hover {
@@ -97,57 +99,42 @@ a {
 
 @media screen and (min-width: 768px) {
   .app-container {
-    width: 30vw;
-    height: 60vh;
+    width: 100vw;
+    height: 70vh;
+  }
+  .card-advice {
+    max-width: 30vw;
+    height: 55vh;
+    margin: 0 auto;
   }
   .cell-title {
     max-width: 30rem;
+    font-size: 16px;
+    padding-bottom: 0.5rem;
   }
   .cell-advice {
-    font-size: 22px;
-    max-width: 30rem;
-    padding: 0 3.5rem;
+    font-size: 28px;
+    max-width: 35rem;
+    padding: 1rem 2rem 2rem;
   }
   .cell-divider {
     margin: 0px auto;
   }
-  btn {
-    margin: 2.8rem auto;
-    font-size: 2rem;
-    width: 3vw;
+  img.pattern {
+    max-width: 80%;
   }
-  img.dice {
-    width: 1.5vw;
-    height: 2;
-    margin-bottom: 0.3rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .app-container {
-    width: 30vw;
-    height: 80vh;
-  }
-  .cell-title {
-    max-width: 30rem;
-  }
-  .cell-advice {
-    font-size: 22px;
-    max-width: 30rem;
-    padding: 0 3rem 1.5rem 3rem;
-  }
-  .cell-divider {
-    margin: 0px auto;
-  }
-  .cell-button {
-    width: 1vw;
+
+  .cell-btn {
+    max-width: 4vw;
   }
   btn {
-    margin: 0.8rem auto;
-    font-size: 0.5rem;
-    width: 2vw;
+    width: 2.5vw;
+    max-height: 4vh;
+    margin: 1.5rem auto;
   }
   img.dice {
-    width: 30%;
-    height: 4.5vh;
+    margin-top: 0.3rem;
+    max-width: 1.5vw;
+    height: 2vh;
   }
 }
