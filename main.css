@@ -63,9 +63,9 @@ img.pattern {
   max-width: 7vw;
   height: 4vh;
   text-align: center;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   position: relative;
-  top: 1rem;
+  top: 1.5rem;
 }
 
 btn {
