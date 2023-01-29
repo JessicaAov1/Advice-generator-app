@@ -6,14 +6,13 @@
     <!-- displays site properly based on user's device -->
  <style>
   .app-container{
-    width:90vw;
-    height:70vh;
-    display:grid;
+    width:100vw;
+    height:100vh;
     grid-template-columns:1fr;
     grid-template-rows: 1fr 3fr 2fr 1fr;
-    margin: 2rem auto;
-   justify-content: center;
-   align-items: center;
+    padding: 2rem;
+    display: grid;
+    align-content: center;
     
    }
   
@@ -43,6 +42,7 @@
 
      
     <div class="app-container">
+      <div class="card-advice">
       <!--section title-->
         <div class="cell-title">Advice #<span class="adviceId" id="adviceId"></span> </div>
         <!--end of section title-->
@@ -64,7 +64,7 @@
       </btn>
         </div>
       <!-- end of button-->
-   
+   </div>
      </div>
      
       
