@@ -60,7 +60,7 @@ img.pattern {
 .cell-button {
   display: grid;
   min-width: 1.7vw;
-  max-width: 7vw;
+  max-width: 6vw;
   height: 4vh;
   text-align: center;
   margin: 0.5rem auto;
@@ -75,14 +75,15 @@ btn {
   color: var(--clr-primary-Neon-green);
 }
 img.dice {
-  margin-top: 0.6rem;
-  width: 3.8vw;
-  height: 1.8vh;
+  margin-top: 0.5rem;
+  width: 3.5vw;
+  height: 2vh;
 }
 
 .icon:hover {
   cursor: pointer;
   box-shadow: 0 0 60px 5px #48abe0;
+  transform: rotate(360deg);
 }
 
 footer {
@@ -104,7 +105,7 @@ a {
   }
   .card-advice {
     max-width: 30vw;
-    height: 55vh;
+    max-height: 60vh;
     margin: 0 auto;
   }
   .cell-title {
@@ -125,16 +126,17 @@ a {
   }
 
   .cell-btn {
-    max-width: 4vw;
+    max-width: 3vw;
   }
   btn {
-    width: 2.5vw;
-    max-height: 4vh;
-    margin: 1.5rem auto;
+    width: 3vw;
+    height: 5.5vh;
+    margin: 0 auto;
+    position: relative;
   }
   img.dice {
-    margin-top: 0.3rem;
+    margin-top: 0.6rem;
     max-width: 1.5vw;
-    height: 2vh;
+    height: 2.5vh;
   }
 }
