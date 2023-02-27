@@ -17,6 +17,7 @@
 body {
   font-family: "Manrope";
   background: var(--clr-Dark-Blue);
+  padding-top:3rem;
 }
 
 .card-advice {
